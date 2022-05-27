@@ -709,6 +709,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+.ga h1{
+    padding-top: 10px;
+    font-family: Spectral;
+    font-size: 2rem;
+}
 @media screen and (min-width:1281px) {
     .gallery {
         display: grid;
