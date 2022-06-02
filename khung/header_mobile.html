@@ -50,13 +50,23 @@
         list-style-type: none;
     }
 
-    .overlap ul li a {
-        font-family: Briko;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        font-size: 5vh;
-
+    @media screen and (max-width: 400px) {
+        .overlap ul li a {
+            font-family: Briko;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-size: 5vh;
+        }
+    }
+    @media screen and (min-width: 401px) {
+        .overlap ul li a {
+            font-family: Briko;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-size: 7vh;
+        }
     }
 </style>
 <script>
