@@ -250,14 +250,13 @@
     }
 
     .Logo {
-        width: 95px;
+        width: 65px;
         height: auto;
     }
 }
 
 /* Format cái div content */
 .content {
-    padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -270,6 +269,7 @@
         grid-column-gap: 1em;
         position: relative;
         align-items: stretch;
+        padding-top: 40px;
     }
 }
 
@@ -280,6 +280,7 @@
         grid-column-gap: 1em;
         position: relative;
         align-items: stretch;
+        padding-top: 40px;
     }
 }
 
@@ -309,23 +310,6 @@
 
 .title p {
     padding: 2em;
-}
-
-.t_title h1 {
-    padding-top: 20px;
-    position: relative;
-    align-self: center;
-    text-align: center;
-    font-family: Briko;
-    font-size: 4rem;
-    font-weight: bold;
-    -webkit-font-smoothing: antialiased;
-}
-
-.t_title p {
-    font-family: Spectral;
-    font-size: 1rem;
-    padding-left: 0.5em;
 }
 
 .A {
@@ -367,34 +351,24 @@
     transition: height ease 0.5s;
 }
 
-.A:hover {
-    height: 600px !important;
-    cursor: pointer;
-    transition: height ease 0.5s;
-    -webkit-transition: height ease 0.5s;
-    -moz-transition: height ease 0.5s;
-    -o-transition: height ease 0.5s;
-}
-
-.B:hover {
-    height: 600px !important;
-    cursor: pointer;
-    transition: height ease 0.5s;
-    -webkit-transition: height ease 0.5s;
-    -moz-transition: height ease 0.5s;
-    -o-transition: height ease 0.5s;
-}
-
-.C:hover {
-    height: 600px !important;
-    cursor: pointer;
-    transition: height ease 0.5s;
-    -webkit-transition: height ease 0.5s;
-    -moz-transition: height ease 0.5s;
-    -o-transition: height ease 0.5s;
-}
 
 @media screen and (min-width: 950px) {
+    .t_title h1 {
+        padding-top: 20px;
+        position: relative;
+        align-self: center;
+        text-align: center;
+        font-family: Briko;
+        font-size: 4rem;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    .t_title p {
+        font-family: Spectral;
+        font-size: 1rem;
+        padding-left: 0.5em;
+    }
     .A:hover {
         height: 400px !important;
         cursor: pointer;
@@ -424,6 +398,22 @@
 }
 
 @media screen and (min-width: 810px) and (max-width: 940px) {
+    .t_title h1 {
+        padding-top: 20px;
+        position: relative;
+        align-self: center;
+        text-align: center;
+        font-family: Briko;
+        font-size: 4rem;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    .t_title p {
+        font-family: Spectral;
+        font-size: 1rem;
+        padding-left: 0.5em;
+    }
     .A:hover {
         height: 600px !important;
         cursor: pointer;
@@ -453,6 +443,22 @@
 }
 
 @media screen and (max-width:800px) {
+    .t_title h1 {
+        padding-top: 30px;
+        position: relative;
+        align-self: center;
+        text-align: center;
+        font-family: Briko;
+        font-size: 3.2rem;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    .t_title p {
+        font-family: Spectral;
+        font-size: 1rem;
+        padding-left: 0.5em;
+    }
     .A:hover {
         height: 500px !important;
         cursor: pointer;
