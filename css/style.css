@@ -248,11 +248,6 @@
         justify-content: center;
         flex-direction: column;
     }
-
-    .Logo {
-        width: 65px;
-        height: auto;
-    }
 }
 
 /* Format cái div content */
@@ -280,7 +275,7 @@
         grid-column-gap: 1em;
         position: relative;
         align-items: stretch;
-        padding-top: 40px;
+        padding-top: 80px;
     }
 }
 
