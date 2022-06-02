@@ -510,6 +510,7 @@
         margin-right: 0.5em;
         margin-top: 0.5em;
         padding-bottom: 40px;
+        padding-top: 80px;
     }
 
     .main div:nth-child(3n) {
@@ -687,7 +688,7 @@
 @media screen and (max-width:969px) {
     .event {
         display: grid;
-        grid-template-columns: 1fr 5fr 15fr;
+        grid-template-columns: 1fr 10fr 33fr;
         padding-top: 70px;
         padding-bottom: 70px;
     }
@@ -786,6 +787,7 @@
     .gallery {
         display: grid;
         grid-template-columns: 1fr;
+        padding-top: 80px;
     }
     .ga {
         text-align: center;
@@ -794,14 +796,8 @@
     
     .img {
         object-fit: contain;
-        width: 250px;
+        width: 95%;
         cursor: pointer;
-        transition: -webkit-transform 0.25s ease;
-        transition: transform 0.25s ease;
         opacity: 1;
-    }
-    .img:active{
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
     }
 }
