@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="module">
+        if(localStorage.getItem('lang') == null){
+            localStorage.setItem("lang","VN");
+        }
+        else if(localStorage.getItem('lang') == "EN"){
+            location.replace("/ENgallery.html");
+        }
+        else if(localStorage.getItem('lang') != "VN"){
+            location.replace("/404.html");
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+            if(width <= 800)
+            {
+                $("#navbar").load("khung/header_mobile.html");
+            }
+            else{
+                $("#navbar").load("khung/header.html");
+            }
+            $("#footer").load("khung/"+ localStorage.getItem('lang') +"footer.html");
+        });
+    </script>
+</head>
+<body style="background-color: rgba(0,0,0,0.2)">
+    <div id="navbar"></div>
+    <div class="home">
+        <div class="backgroundcover"></div>
+        <img src="img/background.png" class="parallax" alt="Furniture">
+        <div class="title">
+            <h1>Gallery</h1>
+            <p>SAU ĐÂY LÀ HÌNH ẢNH CỦA NHỮNG SỰ KIỆN VỪA QUA</p>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="gallery" id="gallery">
+        <div class="ga" onclick="infoGallery('./gallery-img/MOCKMUN1-21-05-2022/Ảnh riêng/', 'MOCK MUN #1 21-05-2022', 'NKO MUN không chỉ có tình yêu - NKO MUN còn nhiều điều hơn thế<br>Vào thứ 7 (21/05/2022) vừa qua, NKO MUN đã có một buổi Training và Showcase Mock MUN diễn ra tại phòng A302.')">
+            <img class="img" src="./gallery-img/MOCKMUN1-21-05-2022/Ảnh chung/Ảnh chung.JPG" alt="anhchung">
+        </div>
+        <div class="gb" style="cursor: pointer;" onclick="infoGallery('./gallery-img/MOCKMUN1-21-05-2022/Ảnh riêng/', 'MOCK MUN #1 21-05-2022', 'NKO MUN không chỉ có tình yêu - NKO MUN còn nhiều điều hơn thế<br>Vào thứ 7 (21/05/2022) vừa qua, NKO MUN đã có một buổi Training và Showcase Mock MUN diễn ra tại phòng A302.')">
+            <h1>MOCK MUN #1 (21-05-2022)</h1>
+            <p><br><br>NKO MUN không chỉ có tình yêu<br>NKO MUN còn nhiều điều hơn thế<br>Vào thứ 7 (21/05/2022) vừa qua, NKO MUN đã có một buổi Training và Showcase Mock MUN diễn ra tại phòng A302.</p>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="./js/main.js"></script>
+    <script src="./js/gallery.js"></script>
+</body>
